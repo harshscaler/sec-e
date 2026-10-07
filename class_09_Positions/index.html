@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            height: 500px;
+            /* width: 1000px; */
+            background-color: gray;
+            border: 2px solid black;
+        }
+        .position {
+            height: 70px;
+            width: 150px;
+        }
+
+        .position{
+            background-color: aquamarine;
+            border: 2px solid black;
+            /* margin: 10px; */
+        }
+
+        #static {
+            position: static;
+            background-color: red;
+            top : 10px;
+            left: 10px;
+        }
+
+        #relative {
+            position: relative;
+            background-color: yellow;
+            top : 10px;
+            left: 300px;
+        }
+
+         #absolute {
+            position: absolute;
+            background-color: orange;
+            top: 2px;
+            right: 2px;
+        }
+
+         #sticky {
+            position: sticky;
+            background-color: brown;
+            top: 2px;
+            left: 150px;
+        }
+
+         #fixed {
+            position: fixed;
+            background-color: purple;
+            top: 2px;
+            left: 150px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="position" id="static"></div>
+        <div class="position" id="relative"></div>
+        <div class="position" id="absolute"></div>
+        <div class="position" id="sticky"></div>
+        <div class="position" id="fixed"></div>
+    </div>
+
+    <div class="container">
+        <div class="position" id="static"></div>
+        <div class="position"></div>
+        <div class="position"></div>
+        <div class="position"></div>
+    </div>
+
+    <div class="container">
+        <div class="position" id="static"></div>
+        <div class="position"></div>
+        <div class="position"></div>
+        <div class="position"></div>
+    </div>
+</body>
+
+</html>
