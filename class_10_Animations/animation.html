@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            gap: 10px;
+            align-items: center;
+            justify-items: center;
+            height: 100vh;
+        }
+
+        .item {
+            width: 100px;
+            height: 80px;
+            background-color: rebeccapurple;
+            cursor: pointer;
+            transition: transform 4s ease-in-out;
+            color: #fff;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        #a:hover {
+            transform: rotate(180deg);
+        }
+
+        #b:hover {
+            transform: scale(0.7);
+        }
+
+        #c:hover {
+            transform: translate(-150px , 100px);
+        }
+
+        #d:hover {
+            transform: skew(180deg , 180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="a">ROTATE</div>
+        <div class="item" id="b">SCALE</div>
+        <div class="item" id="c">TRANSLATE</div>
+        <div class="item" id="d">SKEW</div>
+    </div>
+</body>
+
+</html>

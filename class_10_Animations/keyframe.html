@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .item {
+            background-color: red;
+            border: 2px solid black;
+
+            height: 70px;
+            width: 100px;
+
+            animation: move-left 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move-left {
+            0% {
+                background-color: aqua;
+            }
+
+            25% {
+                transform: translateX(200px);
+                background-color: yellow;
+            }
+
+            50% {
+                transform: translateX(200px) translateY(200px);
+                background-color: green;
+            }
+
+            75% {
+                transform: translateX(0px) translateY(200px);
+                background-color: blue;
+            }
+
+            100% {
+                transform: translateX(0px) translateY(0px);
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+    </div>
+</body>
+</html>
